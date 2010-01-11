@@ -3,6 +3,7 @@ Contributors: Yeriomin A., Artemev K.
 Tags: captcha, image, security, ironclad captcha, security stronghold, spam, spammers, comment, comments, bots, bot, anti spam
 Requires at least: 2.3.1
 Tested up to: 2.5.1
+Stable tag: trunk
 
 3D objects-based CAPTCHA to get rid of spam in comments.
 
