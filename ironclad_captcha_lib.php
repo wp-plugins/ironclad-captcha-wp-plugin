@@ -2,7 +2,6 @@
 /*
 This is a PHP library that handles calling Ironclad CAPTCHA.
 Information page: http://www.securitystronghold.com/products/ironclad-captcha/
-Control panel: http://www.securitystronghold.com/products/ironclad-captcha/login.php
 Copyright (c) 2008-2010 Security Stronghold -- http://www.securitystronghold.com/
 Authors: Andrey Yeriomin, Konstantin Artemev.
 */
@@ -25,9 +24,7 @@ function ironclad_captcha_arraytostr($arr)
 {
 	$str = '';
 	foreach ($arr as $key => $value)
-	{
 		$str .= $key.'='.urlencode(stripslashes($value)).'&';
-	}
 	$str = substr($str,0,strlen($str)-1);
 	return $str;
 }
@@ -51,9 +48,7 @@ function ironclad_captcha_post($host,$path,$data,$port = 80)
 	fwrite($fs,$http_request);
 	
 	while (!feof($fs))
-	{
 		$response .= fgets($fs,1160);
-	}
 	fclose($fs);
 	$response = explode("\r\n\r\n",$response,2);
 	return $response;
