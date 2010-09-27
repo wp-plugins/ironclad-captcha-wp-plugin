@@ -2,7 +2,7 @@
 Contributors: Yeriomin A., Artemev K.
 Tags: captcha, image, security, ironclad captcha, security stronghold, spam, spammers, comment, comments, bots, bot, anti spam
 Requires at least: 2.3.1
-Tested up to: 2.5.1
+Tested up to: 3.0.1
 Stable tag: trunk
 
 3D objects-based CAPTCHA to get rid of spam in comments.
@@ -31,7 +31,7 @@ A: Log into your Iconclad CAPTCHA account (where you got your API-key), click on
 Q: My captcha appears under "Send comment" button. Is it possible to move it ABOVE that button?
 A: Yes, but due to some limitations of WP you should do it by hand. Don't worry, it's quite easy! Open "wp-content/themes" folder of your WP installation and locate folder with the name of the color theme you use in your WP now. Then locate "comments.php" file inside that folder and change the following string:
 
-< ?php do_action('comment_form', $post->ID); ? >
+<?php do_action('comment_form', $post->ID); ?>
 
 You should move it several lines upper, to make it right below the line with < textarea > definition. Save the file and upload it to your WP site if you edited it locally.
 
