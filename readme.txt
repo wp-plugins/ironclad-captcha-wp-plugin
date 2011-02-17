@@ -35,6 +35,8 @@ A: Yes, but due to some limitations of WP you should do it by hand. Don't worry,
 
 You should move it several lines upper, to make it right below the line with < textarea > definition. Save the file and upload it to your WP site if you edited it locally.
 
+In some versions of WordPress these lines are in wp-includes/comment-template.php file. You should move specified lines above, right before '<p class="form-submit">'.
+
 == License ==
 This plugin is free for everyone. Since it's released under the GPL, you can use it free of charge on your personal or commercial blog and alter it any way you like. You must not, however, remove copyright notice implicitly or explicitly, under any conditions. 
 
