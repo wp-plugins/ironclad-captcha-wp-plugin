@@ -2,7 +2,7 @@
 Contributors: Yeriomin A., Artemev K.
 Tags: captcha, image, security, ironclad captcha, security stronghold, spam, spammers, comment, comments, bots, bot, anti spam
 Requires at least: 2.3.1
-Tested up to: 3.0.1
+Tested up to: 3.3.1
 Stable tag: trunk
 
 3D objects-based CAPTCHA to get rid of spam in comments.
@@ -41,7 +41,6 @@ In some versions of WordPress these lines are in wp-includes/comment-template.ph
 This plugin is free for everyone. Since it's released under the GPL, you can use it free of charge on your personal or commercial blog and alter it any way you like. You must not, however, remove copyright notice implicitly or explicitly, under any conditions. 
 
 == Links and Support ==
-
 About Ironclad CAPTCHA:
 
 http://www.securitystronghold.com/products/ironclad-captcha/

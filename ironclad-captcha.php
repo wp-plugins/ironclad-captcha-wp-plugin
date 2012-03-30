@@ -3,11 +3,10 @@
 Plugin Name: Ironclad CAPTCHA
 Plugin URI: http://www.securitystronghold.com/products/ironclad-captcha/
 Description: 3D objects-based CAPTCHA to get rid of spam in comments. Totally unpenetrable because of 3D objects rendered in realtime. Easy for humans, impossible for bots.
-Version: 1.2
-Author: Andrey Yeriomin
-Copyright 2010 Security Stronghold
+Version: 1.3
+Copyright 2012 Security Stronghold
 Requires at least: WordPress 2.3.1
-Tested up to: WordPress 3.0.1
+Tested up to: WordPress 3.3.1
 */
 
 function ironclad_captcha_css()
@@ -75,7 +74,8 @@ class ironclad_captcha
 	function print_form($post_id)
 	{
 		global $user_ID;
-		if ($user_ID) return $id;
+		//if ($user_ID) return $id;
+		if (is_user_logged_in()) return $post_id;
 
 		global $IroncladCaptcha,$apikey;
 		$api_key = $IroncladCaptcha->get_api_key();
@@ -91,8 +91,9 @@ class ironclad_captcha
 
 	function comment_post($id)
 	{
-		global $user_ID;
-		if ($user_ID) return $id;
+		global $user_ID,$_POST;
+		//if ($user_ID) return $id;
+		if (is_user_logged_in()) return $id;
 
 		global $IroncladCaptcha;
 		$api_key = $IroncladCaptcha->get_api_key();
