@@ -1,0 +1,20 @@
+.ironclad-captcha_table {
+	border: 1px solid #AAAAAA;
+	font-size: 11px;
+	background-color: white;
+	color: black;
+	background-image: url(http://captcha.securitystronghold.com/bg.png);
+}
+.ironclad-captcha_image {
+	border: 1px solid #DDDDDD;
+}
+.ironclad-captcha_row {
+}
+.ironclad-captcha_cell {
+}
+.ironclad-captcha_cell a {
+	text-decoration: none;
+}
+.ironclad-captcha_input {
+	width: 18px;
+}
